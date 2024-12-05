@@ -1,20 +1,20 @@
 # magical-photo-gallery
 
-Задача - создать волшебную фотогалерею из изображений различных волшебных предметов с использованием CSS и позиционировать изображения таким образом, чтобы они выглядели красиво и привлекательно.
+The challenge is to create a magical photo gallery of images of various magical items using CSS and position the images in a way that makes them look beautiful and attractive.
 
-## Что выполнялось:
+## What was done:
 
-- Была создана HTML-разметка для страницы, на которой будет размещаться галерея. Заголовок, навигационное меню и контейнер, в котором будут располагаться изображения.
-  
-- Добавлены изображения волшебных предметов и сохранить их в папке с проектом.
+- HTML markup for the page that will host the gallery was created. Header, navigation menu, and container that will hold the images.
 
-- Использован CSS, чтобы задать стиль для заголовка, навигационного меню и контейнера с изображениями.
-  
-- Отобразила изображения в контейнере, используя свойства позиционирования. Изображения расположены таким образом, чтобы они не перекрывали друг друга и имеют одинаковые отступы между собой.
-  
-- Есть эффект при наведении мыши на изображения в галерее.
-  
-- Проверка проекта на различных устройствах и браузерах, чтобы убедиться, что он выглядит хорошо и корректно отображается.
+- Images of magic items were added and saved in the project folder.
+
+- CSS was used to style the header, navigation menu, and container with images.
+
+- Displayed the images in the container using positioning properties. The images are positioned so that they do not overlap each other and have equal indents between them.
+
+- There is an effect when hovering over the images in the gallery.
+
+- Testing the project on different devices and browsers to make sure it looks good and displays correctly.
 
 ## Technologies:
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
