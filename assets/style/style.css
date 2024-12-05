@@ -1,117 +1,138 @@
-* {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 400;
-    font-style: normal;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
-    margin:0;
-    background-image: url(/week5-magical-photo-gallery/assets/image/augustine-wong-oebTM5wHTfw-unsplash.jpg);
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 159%;
+  background-color: #1a1b1d;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    width: 100%;
-    box-shadow: rgba(8, 6, 6, 0.5);
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
-.navbar ul {
-    padding: 0;
+.header {
+  overflow: hidden;
+  background: #1a1b1d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.navbar li { 
-    margin: 0 10px;
-    list-style-type: none; 
-}
-.navbar a {
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.navbar-items {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.navbar a:hover {
-    background: #ddd;
-    color: black;
+.navbar-item__link {
+  text-decoration: none;
+  color: inherit;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.0625em;
 }
 
-h1 {
-    font-size: 44px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 45px;
-    position: relative;
+.navbar-item__link:hover {
+  background: #ddd;
+  color: black;
 }
 
-
-h1::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: currentColor;
-    width: 200px;  
-    margin: 10px auto 0;
+.gallery__title {
+  margin-top: 140px;
+  font-size: 1.875em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: #f2f2f2;
 }
 
-h1:hover {
-    color: #2d012d;
+.gallery__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 21px;
+  margin: 52px 0 140px 0;
 }
 
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 1rem;
-    width: 100%; 
-} 
-img { 
-    width: 350px; 
-    height: 350px;
-    box-shadow:rgb(51, 51, 51, 0.5);
-} 
-.gallery__item { 
-    position: relative; 
-    overflow: hidden;
-    /* анимация */
-    transition: transform 0.5s ease;
-    margin: 0 auto;
-} 
-
-.gallery__item img { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-} 
-
-.gallery__item:hover {
-    position: relative;
-    top: 10px;
-    left: 10px;
-    /* изменение масштаба при наведении на картину */
-    transform: scale(1.05);
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-} 
-
-footer, footer a {
-    background-color: #2d012d;
-    text-align: center;
-    max-width: 100%;
-    padding: 10px 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    color: #ffffff;
-    text-decoration: none;
+.gallery__item {
+  max-width: 259px;
+  width: 100%;
+  height: 303px;
+  margin-bottom: 58px;
 }
 
-footer a:hover {
-    color: #eb8500;
+.gallery__item img {
+  object-fit: cover;
+  width: 259px;
+  width: 100%;
+  height: 259px;
+  cursor: grab;
+  box-shadow: 0px 2px 5px rgba(109, 86, 123, 0.3);
+  border: 4px double #1d6064;
 }
 
+.gallery__item:hover img {
+  transform: rotateY(180deg);
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-size: 1.125em;
+  color: #f2f2f2;
+}
+
+p {
+  margin-top: 4px;
+  font-size: 1em;
+  color: #f2f2f2;
+}
+
+.footer {
+  background-color: #3b3b3b;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.footer address {
+  margin: 20px;
+  font-size: 14px;
+}
+
+.footer address p {
+  margin: 5px 0;
+}
+
+.footer address a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
