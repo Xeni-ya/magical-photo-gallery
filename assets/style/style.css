@@ -16,6 +16,13 @@ body {
   font-style: normal;
   line-height: 159%;
   background-color: #1a1b1d;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -32,6 +39,7 @@ body {
   left: 0;
   width: 100%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 5;
 }
 
 .navbar-items {
@@ -55,6 +63,10 @@ body {
 .navbar-item__link:hover {
   background: #ddd;
   color: black;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .gallery__title {
@@ -117,7 +129,6 @@ p {
   color: #fff;
   padding: 20px 0;
   margin-top: 20px;
-  position: relative;
   overflow: hidden;
   cursor: pointer;
 }
